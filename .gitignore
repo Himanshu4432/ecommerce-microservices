@@ -1,0 +1,1 @@
+# .gitignore\n# Binaries\n*.exe\n*.exe~\n*.dll\n*.so\n*.dylib\n\n# Test binary, built with \n*.test\n\n# Output of the go coverage tool, specifically when used with LiteIDE\n*.out\n\n# Vendor directory\n/vendor/\n\n# Logs\nlogs/\n*.log\n\n# Dependency directories\n/node_modules/\n/.pnp\n.pnp.js\n\n# IDE specific files\n.vscode/\n.idea/\n*.swp\n

@@ -1,0 +1,1 @@
+// cmd/main.go\npackage main\n\nimport (\n\t"log"\n\t"net/http"\n\n\t"github.com/gorilla/mux"\n)\n\nfunc main() {\n\trouter := mux.NewRouter()\n\t// Define routes here\n\n\tlog.Println("product-service is running")\n\thttp.ListenAndServe(":8081", router)\n}\n

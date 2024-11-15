@@ -1,0 +1,1 @@
+# Dockerfile for user-service\nFROM golang:1.20-alpine\n\nWORKDIR /app\n\nCOPY go.mod .\nCOPY go.sum .\nRUN go mod download\n\nCOPY ./cmd ./cmd\nCOPY ./internal ./internal\nCOPY ./configs ./configs\n\nRUN go build -o user-service ./cmd/main.go\n\nEXPOSE 8081\n\nCMD ["./user-service"]\n

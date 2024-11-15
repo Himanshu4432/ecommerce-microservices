@@ -1,0 +1,1 @@
+# prometheus.yml\nglobal:\n  scrape_interval: 15s\n\nscrape_configs:\n  - job_name: 'api-gateway'\n    static_configs:\n      - targets: ['api-gateway:80']\n\n  # Add more scrape configs for other services\n

@@ -1,0 +1,1 @@
+version: '3.8'\n\nservices:\n  api-gateway:\n    build: ./../api-gateway\n    ports:\n      - "80:80"\n    networks:\n      - ecommerce-network\n    depends_on:\n      - user-service\n      - product-service\n      - cart-service\n      - order-service\n      - payment-service\n      - notification-service\n\n
